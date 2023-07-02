@@ -12,7 +12,7 @@ while True:
         continue
 
     current_directory = os.path.dirname(os.path.abspath(__file__))
-    dictionary = os.path.join(current_directory, '..', 'assets', 'text_file.txt')
+    dictionary = os.path.join(current_directory, '..', 'assets', 'dictionary.txt')
 
     with open(dictionary) as f:
         lines = f.readlines()
