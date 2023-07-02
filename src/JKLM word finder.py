@@ -4,9 +4,9 @@ import os
 
 while True:
     
-    string = input("Chunk [stop program]: ")
+    string = input("Chunk (quit): ")
 
-    if string == "stop program":
+    if string == "quit":
         break
     elif not(string.isalpha()):
         continue
@@ -31,7 +31,7 @@ while True:
     pyperclip.copy(random_word)
     
     # Print the longest word
-    print(random_word)
+    print("Copied to clipboard: " + random_word)
     print("")
 
     # Print out the words in a 4-column table
